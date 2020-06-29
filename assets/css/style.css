@@ -50,9 +50,9 @@ ol, ul { padding:0; margin:0; }
 ========================================================================*/
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a, h6 a, .h6 a { color:inherit; text-decoration:none; font-weight:inherit; }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, address, p, pre, blockquote, dl, dd, menu, ol, ul, table, caption, hr { margin:0; margin-bottom:15px; }
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { color:#000; margin:0 0 10px; font-family:"Roboto Slab",Helvetica,Tahoma,Arial,serif; font-weight:400; line-height:1.2; overflow-wrap: break-word; word-wrap: break-word; }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { color:#000; margin:0 0 10px; font-family:"Roboto",sans-serif; font-weight:400; line-height:1.2; overflow-wrap: break-word; word-wrap: break-word; }
 h1, .h1 { font-size:24px; }
-h2, .h2 { font-size:19px; letter-spacing:0.03em; text-transform:uppercase; }
+h2, .h2 { font-size:19px; letter-spacing:0.03em; }
 h3, .h3 { font-size:16px; }
 h4, .h4 { font-size:1em; }
 h5, .h5 { font-size:18px; }
@@ -126,8 +126,8 @@ th { font-family:"Roboto Slab",Helvetica,Tahoma,Arial,serif; font-weight:700; }
   6. Button
 ========================================================================*/
 .btn, .shopify-payment-button__button--unbranded { -moz-user-select:none; -ms-user-select:none; -webkit-user-select:none; user-select:none; -webkit-appearance:none; -moz-appearance:none; appearance:none; display:inline-block; width:auto; height:auto; 
-	text-decoration:none; text-align:center; vertical-align:middle; cursor:pointer; border:1px solid transparent; border-radius:0; padding:8px 15px 8px; background-color:#1d7ae2; color:#fff; font-family:Poppins,Helvetica,Tahoma,Arial,sans-serif; 
-	font-weight:400; text-transform:uppercase; letter-spacing:1px; line-height:normal; white-space:normal; font-size:13px; -ms-transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out; }
+	text-decoration:none; text-align:center; vertical-align:middle; cursor:pointer; border:1px solid transparent; border-radius:0; padding:8px 15px 8px; background-color:#1d7ae2; color:#fff; font-family:Roboto,sans-serif; 
+	font-weight:400; letter-spacing:1px; line-height:normal; white-space:normal; font-size:13px; -ms-transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out; }
 .btn:hover, .btn:focus, .shopify-payment-button__button--unbranded:hover, .shopify-payment-button__button--unbranded:focus { background-color:#1a1a1a; opacity:0.8; color:#fff; text-decoration:none; }
 .btn--small { padding:8px 10px; font-size:0.92308em; line-height:1; }
 .btn--secondary { background-color:#ededed; color:#000; border:1px solid #000; }
@@ -171,6 +171,7 @@ th { font-family:"Roboto Slab",Helvetica,Tahoma,Arial,serif; font-weight:700; }
 .logo { padding-top:15px; padding-bottom:15px; margin:0; }
 
 .stickyNav { position:fixed; top:0; z-index:333; width:100%; left:0; background-color:#fff; box-shadow:0 0 7px rgba(0,0,0,0.2); -webkit-box-shadow:0 0 7px rgba(0,0,0,0.2); }
+.mobileStickyNav { position:fixed; top:0; z-index:333; width:100%; left:0; background-color:#fff; box-shadow:0 0 7px rgba(0,0,0,0.2); -webkit-box-shadow:0 0 7px rgba(0,0,0,0.2); }
 .stickyNav .logo { padding-left:0; }
 .site-cart { float:right; position:relative; }
 .site-header__cart { color:#000; text-decoration:none; }
@@ -225,7 +226,7 @@ th { font-family:"Roboto Slab",Helvetica,Tahoma,Arial,serif; font-weight:700; }
 .search { position:absolute; width:100%; background:#fff; color:#333; z-index:100; box-shadow:0 2px 3px rgba(0,0,0,.1); -webkit-box-shadow:0 2px 3px rgba(0,0,0,.1); opacity:0; visibility:hidden;
 	transform-origin:top center; -webkit-transform-origin:top center; transform:translateY(-100%); -webkit-transform:translateY(-100%); transition:opacity .2s,transform .2s; -webkit-transition:opacity .2s,transform .2s; height: 87px; margin-top: -20px;}
 .search--opened { opacity:1; visibility:visible; transform:translateY(0); -webkit-transform:translateY(0); -ms-transform:translateY(0); }
-.site-header__search .search-trigger { border:0; font-size:20px; padding-right:20px; cursor:pointer; padding-top:0; }
+.site-header__search .search-trigger { border:0; font-size:17px; cursor:pointer; padding-top:0; }
 .site-header__search .search-trigger:hover { color:#30bdbd; }
 .search .search__form { margin:35px 60px; position:relative; }
 .search .search__input { width:100%; border:0; font-size:18px; padding:0 40px; }
@@ -1627,4 +1628,3 @@ background-image: url(https://ionicframework.com/img/getting-started/ionic-nativ
   font-weight: 300;
   font-size: 7px;
 }
-

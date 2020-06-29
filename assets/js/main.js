@@ -86,6 +86,16 @@
             }
        }
     }
+
+    window.onscroll = function(){ myMobileFunction() };
+    function myMobileFunction() {
+        if($(window).scrollTop()>10){
+          $('.mobile-header-wrap').addClass("mobileStickyNav animated fadeInDown");                   
+        } else {
+          $('.mobile-header-wrap').removeClass("mobileStickyNav fadeInDown");              
+        }
+       
+    }
 	
 	/*-----------------------------------------
 	  8. Search Trigger -----------------------
@@ -1096,5 +1106,7 @@
 
 	/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 	autocomplete(document.getElementById("myInput"), countries);
+
+
 
 })(jQuery);

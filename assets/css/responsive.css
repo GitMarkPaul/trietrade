@@ -179,6 +179,13 @@
 	.feature-row__text .row-text { padding: 20px; }
 }
 
+@media only screen and (max-width: 768px) {
+	.d-ipad-none {
+		display: none;
+		
+	}
+}
+
 @media only screen and (min-width: 767px) {
 	.home6-modern #page-content { padding-top:13px; }
 	
@@ -514,5 +521,10 @@
 
 	.full-w-m {
 		width: 100%;
+	}
+
+	.track-order-m {
+		float: left;
+		position: relative;
 	}
 }
