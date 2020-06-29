@@ -1628,3 +1628,21 @@ background-image: url(https://ionicframework.com/img/getting-started/ionic-nativ
   font-weight: 300;
   font-size: 7px;
 }
+
+.grid-items-menu {
+  display: flex; 
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.card-items {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 11px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  width: 31%;
+  height: 38px;
+
+}
