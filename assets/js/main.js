@@ -174,7 +174,7 @@
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			fade: true,
-			arrows: true,
+			arrows: false,
 			autoplay: true,
 			autoplaySpeed: 4000,
 			lazyLoad: 'ondemand'

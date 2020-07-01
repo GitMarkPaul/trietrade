@@ -239,60 +239,126 @@
                 <!--End Page Title-->
                 
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 main-col offset-md-3">
-                            <div class="mb-4">
-                                <form method="post" action="#" id="CustomerLoginForm" accept-charset="UTF-8" class="contact-form">	
-                                    <div class="row">
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                            <div class="form-group">
-                                                <label for="FirstName">Full Name</label>
-                                                <input type="text" name="customer[first_name]" placeholder="Enter your full name" id="FirstName" autofocus="">
+                    <div class="card">
+                        <div class="card-body">
+                            <form method="POST" action="" accept-charset="UTF-8"> 
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group">
+                                                    <label for="FirstName">Full Name</label>
+                                                    <input type="text" name="name" placeholder="Enter your full name" class="form-control" value="" autofocus required>                                   
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                            <div class="form-group">
-                                                <label for="CustomerEmail">Email</label>
-                                                <input type="email" name="customer[email]" placeholder="Enter a valid email address" id="CustomerEmail" class="" autocorrect="off" autocapitalize="off" autofocus="">
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group">
+                                                    <label for="CustomerEmail">Email</label>
+                                                    <input type="email" name="email" placeholder="Enter a valid email address" class="form-control" value="" autocorrect="off" autocapitalize="off" autofocus required>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                            <div class="form-group">
-                                                <label for="CustomerCountry">Shop based in</label>
-                                                <input type="text" name="customer[first_name]" placeholder="Enter your country" autofocus="">
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="CustomerCountry">Shop based in</label>
+                                                    <select class="selectpicker form-control" data-live-search="true" name="country" value="">
+                                                        <option value="" disabled selected>Choose country</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                            <div class="form-group">
-                                                <label for="CustomerStore">Store Name</label>
-                                                <input type="text" name="customer[email]" placeholder="Enter your store" class="" autocorrect="off" autocapitalize="off" autofocus="">
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="CustomerStore">Store Name</label>
+                                                    <input type="text" name="store_name" placeholder="Enter your store" class="form-control" value="" autocorrect="off" autocapitalize="off" autofocus required>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                            <div class="form-group">
-                                                <label for="CustomerPassword">Password</label>
-                                                <input type="password" value="" name="customer[password]" placeholder="Enter your password" id="CustomerPassword" class="">                        	
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group">
+                                                    <label for="CustomerPassword">Password</label>
+                                                    <input type="password" name="password" placeholder="Enter your password" class="form-control" required autocomplete="new-password">                        
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                            <div class="form-group">
-                                                <label for="CustomerPassword">Confirm Password</label>
-                                                <input type="password" value="" name="customer[password]" placeholder="Confirm your password" id="CustomerPassword" class="">                        	
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                            <div class="form-group">
-                                                <label for="CustomerPassword">By clicking "SIGN UP" I agree to Trietrade's Terms of Use and Privacy Policy</label>                        	
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group">
+                                                    <label for="CustomerPassword">Confirm Password</label>
+                                                    <input type="password" value="" name="password_confirmation" placeholder="Confirm your password" class="form-control" required autocomplete="new-password">                           
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="text-center col-12 col-sm-12 col-md-12 col-lg-12">
-                                            <input type="submit" class="btn mb-3" value="Create">
-                                            <p class="mb-4">
-                                                <span>Already have an account?</span> &nbsp; | &nbsp;
-                                                <a href="login.html" id="customer_register_link">Login Account</a>
-                                            </p>
+                                   
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="CustomerStore">House No</label>
+                                                    <input id="house_no" name="house_no" type="text" class="form-control" placeholder="House No" required autofocus value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="CustomerCountry">Province</label>
+                                                    <select class="selectpicker form-control" id="address-prov" data-live-search="true" name="prov_id" required="" autofocus="" value="">
+                                                        <option value="">Choose your Province</option>
+                                                    </select>
+                                                </div>
+                                            </div>  
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="CustomerCountry">City / Municipality</label>
+                                                    <select class="selectpicker form-control" id="address-city" disabled="" data-live-search="true" name="city_id" required="" autofocus=""> 
+                                                        <option value="" selected="">Choose your City / Municipality</option>
+                                                    </select>
+                                                </div>
+                                            </div>  
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="CustomerCountry">Barangay</label>
+                                                    <select class="selectpicker form-control" id="address-brgy" disabled="" data-live-search="true" name="brgy_id" required="" autofocus="">   
+                                                        <option value="" selected="">Choose your Barangay</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-12 col-xl-12">
+                                                <div class="form-group">
+                                                    <label class="form-check-label">
+                                                       Select Account Type
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-12 col-xl-6">
+                                                <div class="form-group">
+                                                    <label>
+                                                        <input type="radio" name="radio" checked> 
+                                                        <span class="label-text">Individual</span>
+                                                    </label>
+                                                    <p class="small"><i>Individual will need Personal Identity card and at least 18 years old in order to sell as Individual on Trietrade</i></p>
+                                                </div>
+                                            </div>
+                                             <div class="col-md-12 col-lg-12 col-xl-6">
+                                                <div class="form-group">
+                                                    <label class="radio-primary">
+                                                        <input type="radio" name="radio"> <span class="label-text">Corporate</span>
+                                                    </label>
+                                                    <p class="small"><i>Please make sure you have active Business License in order to sell on Trietrade as a Corporate</i></p>
+                                                </div>
+                                            </div>
+                                                
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group">
+                                                    <label for="CustomerPassword">By clicking "SIGN UP" I agree to Trietrade's Terms of Use and Privacy Policy</label>                          
+                                                </div>
+                                            </div>
+                                           
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                <button type="submit" class="btn mb-3" style="width: 100%">Sign Up</button>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                <p class="mt-1">
+                                                    <span>Already have an account?</span>&nbsp;
+                                                    <a href="{{ route('login') }}">Login Account</a>
+                                                </p>
+                                            </div>
+                                   
                                         </div>
                                     </div>
                                 </form>
