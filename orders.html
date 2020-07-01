@@ -49,8 +49,8 @@
                 </a>
             </div>
 
-            <!--Search Form Drawer-->
-            <div class="search">
+        	<!--Search Form Drawer-->
+        	<div class="search">
                 <div class="search__form">
                     <form class="search-bar__form" action="#">
                         <button class="go-btn search__button" type="submit"><i class="icon anm anm-search-l"></i></button>
@@ -64,12 +64,12 @@
             <div class="top-header d-m-none d-ipad-none">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-4 col-md-4 col-lg-4">
-                            <ul class="customer-links list-inline">
-                                <li><a href="seller-registration.html">Trietrade Sellers</a></li>
-                                <li><a href="seller-registration.html">Customer Center</a></li>
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<ul class="customer-links list-inline">
+								<li><a href="seller-registration.html">Trietrade Sellers</a></li>
+								<li><a href="seller-registration.html">Customer Center</a></li>
                             </ul>
-                        </div>
+						</div>
                         <div class="col-8 col-sm-8 col-md-8 col-lg-8 text-right">
                             <ul class="customer-links list-inline">
                                 <li><a href="login.html">Login</a></li>
@@ -220,8 +220,8 @@
                 
                     <div class="row justify-content-center align-items-center">
                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <!--Desktop Menu-->
-                            <div class="bottomNav-menu">
+                        	<!--Desktop Menu-->
+                        	<div class="bottomNav-menu">
                                 <ul id="siteNav" class="site-nav medium hidearrow">
                                     <li class="lvl1 parent megamenu"><a href="#"><img src="assets/images/category.png" width="18">&nbsp; Categories <i class="anm anm-angle-down-l"></i></a>
                                     </li>
@@ -232,154 +232,210 @@
                             </div>
                             <!--End Desktop Menu-->
                         </div>
-                    </div>
+                	</div>
                 </div>
             </div>
             <!--End Header-->
-    
+        
             <!--Body Content-->
             <div id="page-content">
+                
                 <!--Page Title-->
                 <div class="page section-header text-center mb-0">
                     <div class="page-title">
-                        <div class="wrapper"><h1 class="page-width">My Order Details</h1></div>
-                      </div>
+                        <div class="wrapper"><h1 class="page-width">My Orders</h1></div>
+                    </div>
                 </div>
                 <!--End Page Title-->
                 <div class="bredcrumbWrap">
                     <div class="container breadcrumbs">
                         <a href="index.html" title="Back to the home page">Home</a>
                         <span aria-hidden="true">›</span>
-                        <span>Order Tracking Details</span>
+                        <a href="manage-account.html" title="Back to the home page">Manage Account</a>
+                        <span aria-hidden="true">›</span>
+                        <span>Orders</span>
                     </div>
                 </div>
-        
+
                 <div class="container">
                     <div class="row">
-
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-4">
-                            <div class="your-order-payment">
-                                <div class="your-order">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-12 col-sm-12">
-                                            <h2 class="order-title">Order #2062064182674</h2>
-                                            <p>Placed on 26-06-2020 09:14 AM</p>
-                                        </div>
-                                        <div class="col-lg-6 col-md-12 col-sm-12 text-right mt-2">
-                                            <a href="payment-method.html" class="btn full-w-m">Pay Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <div class="col-12 col-md-12 hh-grayBox">
-                                <div class="row justify-content-between">
-                                    <div class="order-tracking completed">
-                                        <span class="is-complete"></span>
-                                        <p>Ordered<br><span>Mon, June 24</span></p>
-                                    </div>
-                                    <div class="order-tracking completed">
-                                        <span class="is-complete"></span>
-                                        <p>Shipped<br><span>Tue, June 25</span></p>
-                                    </div>
-                                    <div class="order-tracking">
-                                        <span class="is-complete"></span>
-                                        <p>Delivered<br><span>Fri, June 28</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                            <div class="your-order-payment">
-                                <div class="row mb-4">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="your-payment">
+                                <div class="row">
                                     <div class="col">
-                                        <h2 class="order-title">Shipping Address</h2>
-                                        <p>Sold by Trietrade Store Name</p>
+                                        <h2 class="payment-title mb-3">Orders List</h2>
                                     </div>
-                                </div>
-                            </div>
+                                    <div class="col filter-w-d text-right mb-3">
+                                        <div class="filters-toolbar__item">
+                                            <label for="SortBy" class="hidden">Sort</label>
+                                            <select name="SortBy" id="SortBy" class="filters-toolbar__input filters-toolbar__input--sort">
+                                                <option value="title-ascending" selected="selected">Filter Order</option>
+                                                <option>All</option>
+                                                <option>To Pay</option>
+                                                <option>To Ship</option>
+                                                <option>To Receive</option>
+                                            </select>
+                                        </div>
+                                    </div>
 
-                            <div class="your-order-payment mt-4">
-                                <div class="row mb-4">
-                                    <div class="col">
-                                        <h2 class="order-title">Billing Address</h2>
-                                        <p>Sold by Trietrade Store Name</p>
+                                </div>
+
+                                <div class="payment-method">
+                                    <div class="payment-accordion">
+                                        <div id="accordion" class="payment-section">
+
+                                            <div class="card mb-2">
+                                                <div class="card-header">
+                                                    <a class="card-link" data-toggle="collapse" href="#collapseOne"># 924070120034935 <span class="badge badge-primary">To Pay</span> </a>
+                                                </div>
+                                                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <figure>
+                                                            <img src="https://image.flaticon.com/icons/svg/970/970514.svg" alt="">
+                                                            <figcaption>
+                                                                <h3>Tracking Details</h3>
+                                                                <h4># 924070120034935</h4>
+                                                                <h6><b>Juan Dela Cruz</b></h6>
+                                                                <p>Brgy. Cutud Angeles City, Pampanga</p>
+                                                            </figcaption>
+                                                        </figure>
+
+                                                        <div class="order-track">
+
+                                                            <div class="row">
+                                                                <div class="col-lg-4">
+                                                                    <div class="order-track-step">
+                                                                        <div class="order-track-status">
+                                                                            <span class="order-track-status-dot"></span>
+                                                                            <span class="order-track-status-line"></span>
+                                                                        </div>
+                                                                        <div class="order-track-text">
+                                                                            <p class="order-track-text-stat">Order Date</p>
+                                                                            <span class="order-track-text-sub">1st November, 2019</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="order-track-step">
+                                                                        <div class="order-track-status">
+                                                                            <span class="order-track-status-dot"></span>
+                                                                            <span class="order-track-status-line-inactive"></span>
+                                                                        </div>
+                                                                        <div class="order-track-text">
+                                                                            <p class="order-track-text-stat"> To Pay</p>
+                                                                            <span class="order-track-text-sub">1st November, 2019</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="order-track-step">
+                                                                        <div class="order-track-status">
+                                                                            <span class="order-track-status-dot-inactive"></span>
+                                                                            <span class="order-track-status-line-inactive"></span>
+                                                                        </div>
+                                                                        <div class="order-track-text">
+                                                                            <p class="order-track-text-stat text-muted"> To Ship</p>
+                                                                            <span class="order-track-text-sub text-muted">3rd November, 2019</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="order-track-step">
+                                                                        <div class="order-track-status">
+                                                                            <span class="order-track-status-dot-inactive"></span>
+                                                                            <span class="order-track-status-line-inactive"></span>
+                                                                        </div>
+                                                                        <div class="order-track-text">
+                                                                            <p class="order-track-text-stat text-muted"> To Receive</p>
+                                                                            <span class="order-track-text-sub text-muted">3rd November, 2019</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-8 mt-30-m">
+                                                                    <h2 class="order-title mb-2">Your Order Details</h2>
+                                                                    <div class="table-responsive">
+                                                                        <table class="bg-white table table-bordered table-hover text-center">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th class="text-left">Product Name</th>
+                                                                                    <th>Status</th>
+                                                                                    <th>Qty</th>
+                                                                                    <th>Price (&#8369;)</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="text-left">Spike Jacket</td>
+                                                                                    <td><span class="badge badge-primary">In Progress</span></td>
+                                                                                    <td>1</td>
+                                                                                    <td>99</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <tfoot class="font-weight-600">
+                                                                                <tr>
+                                                                                    <td colspan="3" class="text-right">Shipping Fee</td>
+                                                                                    <td>50.00</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td colspan="3" class="text-right">Payment Method</td>
+                                                                                    <td>Cash On Delivery</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td colspan="3" class="text-right"><strong>Total Price</strong></td>
+                                                                                    <td><strong>845.00</strong></td>
+                                                                                </tr>
+                                                                            </tfoot>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card mb-2">
+                                                <div class="card-header">
+                                                    <a class="card-link" data-toggle="collapse" href="#collapseTwo"># 924070120034935 <span class="badge badge-warning">To Ship</span> </a>
+                                                </div>
+                                                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                                    <div class="card-body">
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card mb-2">
+                                                <div class="card-header">
+                                                    <a class="card-link" data-toggle="collapse" href="#collapseThree"># 924070120034935 <span class="badge badge-success">To Recieve</span> </a>
+                                                </div>
+                                                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                                    <div class="card-body">
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                            <div class="your-order-payment">
-                                <div class="your-order">
-                                    <div class="row mb-4">
-                                        <div class="col">
-                                            <h2 class="order-title">Package 1 of 1</h2>
-                                            <p>Sold by Trietrade Store Name</p>
-                                        </div>
-                                        <div class="col text-right">
-                                            <a href="" class="text-primary"><strong><i class="ti-email"></i>&nbsp; Chat Us Now</strong></a>
-                                        </div>
-                                    </div>
 
-                                    <div class="row">
-                                        <div class="col">
-                                            <h3 class="order-title">Get by Fri 22 Nov - Sat 30 Nov</h3>
-                                        </div>
-                                        <div class="col text-right">
-                                            <p>Standard Delivery</p>
-                                        </div>
-                                    </div>
-                                    <div class="table-responsive"> 
-                                        <table class="bg-white table table-bordered table-hover text-center">
-                                            <thead>
-                                                <tr>
-                                                    <th>Image</th>
-                                                    <th>Name</th>
-                                                    <th>Qty</th>
-                                                    <th>Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <img src="assets/images/autoparts/categories-img1.jpg" alt="" width="50">
-                                                    </td>
-                                                    <td>Spike Jacket</td>
-                                                    <td>1</td>
-                                                    <td>$99</td>
-                                                </tr>
-                                            </tbody>
-                                            <tfoot class="font-weight-600">
-                                                <tr>
-                                                    <td colspan="3" class="text-right">Subtotal</td>
-                                                    <td>$845.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="3" class="text-right">Shipping Fee</td>
-                                                    <td>65.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="3" class="text-right">Total (VAT Included)</td>
-                                                    <td class="text-warning" style="font-size: 18px">$845.00</td>
-                                                </tr>
-                                            </tfoot>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="pagination mt-4">
+                            <ul>
+                                <li class="prev"><a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li class="next"><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                            </ul>
                         </div>
+
 
                     </div>
-                </div>
-
                 </div>
             </div>
             <!--End Body Content-->
-
+        
             <!--Footer-->
             <footer id="footer" class="footer-2">
                 <div class="site-footer">
@@ -432,7 +488,9 @@
                         <div class="footer-bottom">
                             <div class="row">
                                 <!--Footer Copyright-->
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 order-1 order-md-0 order-lg-0 order-sm-1 copyright"><span></span> <a href="templateshub.net">Copyright &copy; 2020. All Rights Reserved. Trietrade</a></div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 order-1 order-md-0 order-lg-0 order-sm-1 copyright">
+                                    Copyright &copy; 2020. All Rights Reserved. Trietrade
+                                </div>
                                 <!--End Footer Copyright-->
                             </div>
                         </div>
@@ -451,7 +509,6 @@
             <script src="assets/js/plugins.js"></script>
             <script src="assets/js/lazysizes.js"></script>
             <script src="assets/js/main.js"></script>
-            
         </div>
     </body>
 
