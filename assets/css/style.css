@@ -205,15 +205,16 @@ th { font-family:"Roboto Slab",Helvetica,Tahoma,Arial,serif; font-weight:700; }
 /*======================================================================
   6. Button
 ========================================================================*/
-.btn, .shopify-payment-button__button--unbranded { -moz-user-select:none; -ms-user-select:none; -webkit-user-select:none; user-select:none; -webkit-appearance:none; -moz-appearance:none; appearance:none; display:inline-block; width:auto; height:auto; 
+.btn{ -moz-user-select:none; -ms-user-select:none; -webkit-user-select:none; user-select:none; -webkit-appearance:none; -moz-appearance:none; appearance:none; display:inline-block; width:auto; height:auto; 
 	text-decoration:none; text-align:center; vertical-align:middle; cursor:pointer; border:1px solid transparent; border-radius:0; padding:8px 15px 8px; background-color:#1d7ae2; color:#fff; font-family:Roboto,sans-serif; 
 	font-weight:400; letter-spacing:1px; line-height:normal; white-space:normal; font-size:13px; -ms-transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out; }
-.btn:hover, .btn:focus, .shopify-payment-button__button--unbranded:hover, .shopify-payment-button__button--unbranded:focus { background-color:#1a1a1a; opacity:0.8; color:#fff; text-decoration:none; }
 .btn--small { padding:8px 10px; font-size:0.92308em; line-height:1; }
 .btn--secondary { background-color:#ededed; color:#1a2158; border:1px solid #1a2158; }
 .btn--link { background-color:transparent; border:0; margin:0; color:#31a3a3; text-align:left; text-decoration:none; outline:none !important;box-shadow:none !important; }
 .btn--link:hover, .btn--link:focus { opacity:0.8; text-decoration:none; }
 .btn--danger { background-color: #dc3545; color: #fff;  }
+.btn--ghost {background-color: #e6e8ea; color: #1a2158; font-weight: 570;}
+.btn--primary {background-color: #1d7ae2; color: #fff; font-weight: 570;}
 
 /*======================================================================
   8. Pre Loader
@@ -1636,12 +1637,10 @@ input[type="text"].search-field::-webkit-input-placeholder {
 }
 
 /* Manage Account Card Layouts */
-      
-/*.card{
-  background: #fff;
-  padding: 14px 80px 18px 18px;
-  cursor: pointer;
-}*/
+  
+.card .card-body > p {
+  width: 80%;
+}
 
 .card h3{
 font-weight: 600;
