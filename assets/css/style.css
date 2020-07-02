@@ -67,7 +67,7 @@ input, button, select, textarea { background: transparent; border:1px solid #d7d
 input:focus, input:active, button:focus, button:active, select:focus, select:active, textarea:focus, textarea:active { outline:none; border-color:#5b77d8; }
 input, select, textarea { width: 100%; font-size: 14px; box-shadow:none; -webkit-box-shadow:none; border-radius:0; -webkit-border-radius:0; }
 input, select { height:40px; padding:0 10px; }
-input[type="checkbox"], input[type="radio"] { width:auto; height:auto; }
+input[type="checkbox"], input[type="radio"] { width:15px; height:15px; }
 input[type="checkbox"]:focus, input[type="radio"]:focus { outline:0; box-shadow:none; }
 
 input[type="radio"]{
@@ -149,6 +149,124 @@ input[type="radio"]:disabled + .label-text:before{
   100%{transform: scale(1);}
 }
 
+
+/*Checkbox*/
+
+.control {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    padding-top: 0px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1a2158;
+}
+    .control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+.control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+    border: 0px solid #000000;
+    border-radius: 0px;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #cccccc;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #1d7ae2;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #0e6647d;
+}
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}
+.control-checkbox .control_indicator::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: -1.3rem;
+    margin-top: -1.3rem;
+    background: #1d7ae2;
+    border-radius: 3rem;
+    opacity: 0.2;
+    z-index: 99999;
+    transform: scale(0);
+}
+@keyframes s-ripple {
+    0% {
+        transform: scale(0);
+    }
+    20% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+@keyframes s-ripple-dup {
+   0% {
+       transform: scale(0);
+    }
+   30% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+.control-checkbox input + .control_indicator::before {
+    animation: s-ripple 250ms ease-out;
+}
+.control-checkbox input:checked + .control_indicator::before {
+    animation-name: s-ripple-dup;
+}
+
 .form-control {font-size: 13px;}
 .text-left { text-align:left !important; }
 .text-center { text-align:center !important; }
@@ -161,6 +279,10 @@ hr { margin:20px 0; border:0; border-bottom:1px solid #e8e9eb; }
 /*======================================================================
   4. Utilities
 ========================================================================*/
+
+.ml-1 {margin-left: 1rem;}
+.ml-2 {margin-left: 2rem;}
+
 .hidden { display: none; }
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 .poss_relative { position: relative; }
@@ -207,7 +329,7 @@ th { font-family:"Roboto Slab",Helvetica,Tahoma,Arial,serif; font-weight:700; }
 ========================================================================*/
 .btn{ -moz-user-select:none; -ms-user-select:none; -webkit-user-select:none; user-select:none; -webkit-appearance:none; -moz-appearance:none; appearance:none; display:inline-block; width:auto; height:auto; 
 	text-decoration:none; text-align:center; vertical-align:middle; cursor:pointer; border:1px solid transparent; border-radius:0; padding:8px 15px 8px; background-color:#1d7ae2; color:#fff; font-family:Roboto,sans-serif; 
-	font-weight:400; letter-spacing:1px; line-height:normal; white-space:normal; font-size:13px; -ms-transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out; }
+	font-weight:400; letter-spacing:1px; line-height:normal; white-space:normal; text-transform: none; font-size:13px; -ms-transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out; }
 .btn--small { padding:8px 10px; font-size:0.92308em; line-height:1; }
 .btn--secondary { background-color:#ededed; color:#1a2158; border:1px solid #1a2158; }
 .btn--link { background-color:transparent; border:0; margin:0; color:#31a3a3; text-align:left; text-decoration:none; outline:none !important;box-shadow:none !important; }
@@ -215,6 +337,7 @@ th { font-family:"Roboto Slab",Helvetica,Tahoma,Arial,serif; font-weight:700; }
 .btn--danger { background-color: #dc3545; color: #fff;  }
 .btn--ghost {background-color: #e6e8ea; color: #1a2158; font-weight: 570;}
 .btn--primary {background-color: #1d7ae2; color: #fff; font-weight: 570;}
+.btn--full-w {width: 100%;}
 
 /*======================================================================
   8. Pre Loader
@@ -1358,7 +1481,7 @@ input.checkbox { height:auto; vertical-align:middle; padding:0; box-shadow:none;
   33. Footer
 ========================================================================*/  
 #footer { margin-top:35px; }
-.footer-2 .site-footer { background-color:#fff; }
+.footer-2 .site-footer { background-color:#edf2fa; }
 .footer-2 .footer-top h4, .footer-2 .footer-top .h4 { color:#1a2158; font-size:15px; font-weight:400; font-family:Poppins,Helvetica,Tahoma,Arial,sans-serif; margin-bottom:15px; }
 .footer-2 .footer-top, .footer-2 .footer-links a, .footer-2 .footer-top p, .footer-2 .footer-bottom, .footer-2 .footer-bottom a { color:#333333; }
 .footer-2 .site-footer .addressFooter .icon { color:#888888 !important; margin-top:2px; }
@@ -1909,4 +2032,17 @@ figure figcaption h2 {
     margin-left: 10px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+
+
+.input-group-prepend {
+  position: absolute;
+  margin-left: 560px;
+}
+
+.input-group-text {
+  margin-top: 4px;
+  background-color: transparent;
+  border: none;
 }

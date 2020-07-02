@@ -520,6 +520,11 @@
 	.filter-w-d {max-width: 40%}
 	.mt-30-m {margin-top: 30px;}
 	figure img {width: 4rem; height: 4rem; margin-right: 0;}
+
+	.input-group-prepend {
+	  margin-left: 340px;
+	}
+
 }
 
 @media (max-width: 375px) {
@@ -544,4 +549,8 @@
 	.mt-30-m {margin-top: 30px;}
 
 	figure img {width: 4rem; height: 4rem; margin-right: 0;}
+
+	.input-group-prepend {
+	  margin-left: 300px;
+	}
 }

@@ -81,7 +81,7 @@
             </div>
             <!--End Top Header-->
 
-            <div class="header-wrap animated d-flex border-bottom">
+<div class="header-wrap animated d-flex border-bottom mobile-header-wrap">
                 <div class="container-fluid">        
                     <div class="row align-items-center">
                         <!--Desktop Logo-->
@@ -92,75 +92,146 @@
                         </div>
                         <!--End Desktop Logo-->
 
-                        <div class="col-2 col-sm-3 col-md-3 col-lg-8 d-m-none">
+                        <div class="col-2 col-sm-3 col-md-3 col-lg-7 d-m-none d-ipad-none">
                             <!-- Search -->
                             <form autocomplete="off">
                                 <div class="input-group">
-                                    <input type="text" class="form-control search-field" id="myInput" placeholder="Search in Trietrade ...">
+                                    <input type="text" class="form-control search-field" placeholder="Search in Trietrade ...">
                                     <span class="input-group-btn">
                                         <button class="btn search-btn" type="button"><i class="fa fa-search"></i></button>
                                     </span>
                                 </div>
                             </form>
                         </div>
-      
+                        
                         <!--Mobile Logo-->
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 d-block d-lg-none">
+                           <div class="track-order-m">
+                                <a href="order-details.html" class="site-header__track-order" title="Track Order">
+                                    <img src="assets/images/order.png" alt="Track My Order" width="22">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 d-block d-lg-none">
                             <div class="logo">
                                 <a href="index.html">
                                     <img src="assets/images/trietrade-logo.jpg" alt="Trietrade" title="Trietrade" />
                                 </a>
                             </div>
                         </div>
-                        <!--Mobile Logo-->
-                        <div class="col-6 col-sm-3 col-md-3 col-lg-2">
-                            <div class="site-cart d-m-none">
-                                <a href="#" class="site-header__cart" title="Cart">
-                                    <i class="icon anm anm-bag-l"></i>
-                                    <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">2</span>
-                                </a>
-                            </div>
+                        <div class="col-3 col-sm-3 col-md-3 col-lg-3 d-block d-lg-none">
                             <div class="site-header__search">
                                 <button type="button" class="search-trigger"><i class="icon anm anm-search-l"></i></button>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                        <!-- End Mobile Logo-->
 
-            <!--Nav Menu Bottom Header-->
-            <div class="d-flex border-bottom">
-            	<div class="container-fluid">        
-                    <div class="row">
-                        <div class="col-lg-12">
-                        	<!--Desktop Menu-->
-                        	<nav class="grid__item text-left">
+                        <div class="col-6 col-sm-3 col-md-3 col-lg-3">
+                            <div class="site-cart d-m-none d-ipad-none">
+                                <a href="#" class="site-header__cart">
+                                    <img src="assets/images/default.jpg" alt="Avatar" style="width: 30px; height: 30px; border-radius: 50%;" />
+                                </a>
+                                <!--Minicart Popup-->
+                                <div id="header-cart" class="block block-cart">
+                                    <ul class="mini-products-list">
+                                        <li class="item">
+                                            <div style="display: flex;">
+                                                <img src="assets/images/default.jpg" alt="Avatar" style="width: 40px; height: 40px; border-radius: 50%;" />
+                                                <div class="product-details">
+                                                    <p class="pName">Juan Dela Cruz</p>
+                                                    <div class="variant-cart">example@gmail.com</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <a class="pName" href="manage-account.html">Manage Account</a>
+                                        </li>
+                                        <li class="item">
+                                            <a class="pName" href="manage-account.html">My Orders</a>
+                                        </li>
+                                        <li class="item">
+                                            <a class="pName" href="manage-account.html">My Wishlist &amp; Followed Store</a>
+                                        </li>
+                                        <li class="item">
+                                            <a class="pName" href="manage-account.html">My Reviews</a>
+                                        </li>
+                                        <li class="item">
+                                            <a class="pName" href="manage-account.html">My Returns &amp; Cancellations</a>
+                                        </li>
+                                        <li class="item">
+                                            <a class="pName" href="manage-account.html">Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--End Minicart Popup-->
+                            </div>
+                            <div class="site-cart d-m-none d-ipad-none"  style="margin-right: 30px;">
+                                <a href="shopping-cart.html" class="site-header__cart" title="Cart">
+                                    <i class="icon anm anm-bag-l"></i>
+                                    <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">2</span>
+                                </a>
+                            </div>
+                            <div class="site-cart d-m-none d-ipad-none"  style="margin-right: 30px;">
+                                <a href="#" class="site-header__cart" title="Notification">
+                                    <img src="assets/images/bell.png">
+                                    <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">2</span>
+                                </a>
+                            </div>
+                            <div class="site-cart d-m-none d-ipad-none" style="margin-right: 30px;">
+                                <a href="#" class="site-header__track-order" title="Track Order">
+                                    <img src="assets/images/order.png" alt="Track My Order">
+                                    <span id="CartCount" class="site-header__track-order-count" data-cart-render="item_count">2</span>
+                                </a>
+
+                                 <!--Minicart Popup-->
+                                <div id="header-track-order" class="block block-cart">
+                                    <ul class="mini-products-list">
+                                        <li class="item">
+                                            <p>You have 2 new orders</p>
+                                        </li>
+                                        <li class="item">
+                                            <a href="order-details.html" style="display: flex;">
+                                                <img src="assets/images/track-order.png" alt="Avatar" style="width: 30px; height: 30px; border-radius: 50%;" />
+                                                <div class="product-details">
+                                                    <p class="pName">23423234823084</p>
+                                                    <span class="variant-cart text-muted">10 minutes ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="order-details.html" style="display: flex;">
+                                                <img src="assets/images/track-order.png" alt="Avatar" style="width: 30px; height: 30px; border-radius: 50%;" />
+                                                <div class="product-details">
+                                                    <p class="pName">76523498928343</p>
+                                                    <span class="variant-cart text-muted">1 day ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="">See all orders <i class="icon-arrow-right" style="float: right; padding-top: 3px"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--End Minicart Popup-->
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <!--Desktop Menu-->
+                            <div class="bottomNav-menu">
                                 <ul id="siteNav" class="site-nav medium hidearrow">
-                                    <li class="lvl1 parent megamenu text-lowercase"><a href="#"><img src="assets/images/worldwide.png" width="30"> Categories <i class="anm anm-angle-down-l"></i></a>
-                                        <div class="megamenu style1">
-                                            <ul class="grid mmWrapper">
-                                                <li class="grid__item large-up--one-whole">
-                                                    <ul class="grid">
-                                                        <li class="grid__item lvl-1 col-md-3 col-lg-3"><a href="#" class="site-nav lvl-1">Category 1</a>
-                                                            <ul class="subLinks">
-                                                                <li class="lvl-2"><a href="index.html" class="site-nav lvl-2">Cat 1</a></li>
-                                                                <li class="lvl-2"><a href="index.html" class="site-nav lvl-2">Cat 2</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <li class="lvl1 parent megamenu"><a href="#"><img src="assets/images/category.png" width="18">&nbsp; Categories <i class="anm anm-angle-down-l"></i></a>
                                     </li>
-                                    <li><a href="#">Trietrade Market <i class="anm anm-angle-down-l"></i></a></li>
-                                    <li><a href="#">Just For You <i class="anm anm-angle-down-l"></i></a></li>
-                                    <li><a href="#">Vouchers <i class="anm anm-angle-down-l"></i></a></li>
-                                    <li><a href="#">Trending <i class="anm anm-angle-down-l"></i></a></li>
+                                    <li><a href="#"><img src="assets/images/gift.png" width="18">&nbsp; Just For You</a></li>
+                                    <li><a href="vouchers.html"><img src="assets/images/voucher.png" width="18">&nbsp; Vouchers</a></li>
+                                    <li><a href="#"><img src="assets/images/trending.png" width="18">&nbsp; Trending</a></li>
                                 </ul>
-                            </nav>
+                            </div>
                             <!--End Desktop Menu-->
                         </div>
-                	</div>
+                    </div>
                 </div>
             </div>
             <!--End Header-->
@@ -208,11 +279,17 @@
                                         </a>
                                     </div>
                                     <div class="mt-4">
-                                        <button type="button" class="btn"><i class="ti-comment-alt"></i>&nbsp; Chat Now</button>
-                                        <button type="button" class="btn btn--ghost"  data-toggle="modal" data-target="#unfollowStoreDialog"><i class="ti-plus"></i>&nbsp; Follow Store</button>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="d-flex">
+                                                    <button type="button" class="btn"><i class="ti-comment-alt"></i>&nbsp; Chat Now</button>
+                                                    <button type="button" class="btn btn--ghost ml-2"  data-toggle="modal" data-target="#unfollowStoreDialog"><i class="ti-plus"></i>&nbsp; Follow Store</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                </div>
+                            </div>
                         </div>
                     </div>
 
