@@ -1640,7 +1640,7 @@ input[type="text"].search-field::-webkit-input-placeholder {
 }
 
 .nav__icon {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .prFeatures .feature .account-details {
@@ -1819,10 +1819,9 @@ background-image: url(https://ionicframework.com/img/getting-started/ionic-nativ
 
 .badge-number--notif > span {
   color: #fff;
-  padding-top: 1px;
   position: absolute;
-  font-weight: 300;
-  font-size: 7px;
+  font-weight: 600;
+  font-size: 8px;
 }
 
 .grid-items-menu {
