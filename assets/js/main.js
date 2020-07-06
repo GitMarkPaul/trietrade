@@ -1133,10 +1133,11 @@
 
 
 
-		$('.selectall').click(function(){
-		  $('input:checkbox').prop('checked', this.checked);
-		})
-
+		$(".t_chat-fab").click(function() {
+			$('.t_chat-fab .wrap').toggleClass("ani");
+			$('.t_chat').toggleClass("open");
+			$('.img-fab.img').toggleClass("close");
+		});
 
 
 })(jQuery);

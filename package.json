@@ -1,0 +1,39 @@
+{
+  "name": "trietrade",
+  "version": "1.5.0",
+  "description": "Trietrade E-commerce Platform",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss assets/css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css assets/css/header_menu.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.concat.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitMarkPaul/trietrade.git"
+  },
+  "keywords": [
+    "Trietrade"
+  ],
+  "author": "Mark Paul Caneda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GitMarkPaul/trietrade/issues"
+  },
+  "homepage": "https://github.com/GitMarkPaul/trietrade#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "concat": "^1.0.3",
+    "node-sass": "^4.13.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

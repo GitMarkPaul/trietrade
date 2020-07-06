@@ -24,10 +24,10 @@
 
             <!-- Nav Menu Mobile -->
             <div class="nav__mobile-menu">
-                <a href="index.html" class="nav__link nav__link--active">
+                <a href="index.html" class="nav__link">
                     <i class="ti-home nav__icon"></i>
                 </a>
-                <a href="messages.html" class="nav__link">
+                <a href="messages.html" class="nav__link nav__link--active">
                     <i class="ti-comment-alt nav__icon"></i>
                     <div class="badge badge-number--notif"><span>10</span></div>
                 </a>
@@ -48,7 +48,7 @@
                 <div class="search__form">
                     <form class="search-bar__form" action="#">
                         <button class="go-btn search__button" type="submit"><i class="icon anm anm-search-l"></i></button>
-                        <input class="search__input" type="search" name="q" value="" placeholder="Search in Trietrade..." aria-label="Search" autocomplete="off">
+                        <input class="search__input" id="myInput" type="search" name="q" value="" placeholder="Search in Trietrade..." aria-label="Search" autocomplete="off">
                     </form>
                     <button type="button" class="search-trigger close-btn"><i class="anm anm-times-l"></i></button>
                 </div>
@@ -91,7 +91,7 @@
                             <!-- Search -->
                             <form autocomplete="off">
                                 <div class="input-group">
-                                    <input type="text" class="form-control search-field" id="myInput" placeholder="Search in Trietrade ...">
+                                    <input type="text" class="form-control search-field" placeholder="Search in Trietrade ...">
                                     <span class="input-group-btn">
                                         <button class="btn search-btn" type="button"><i class="fa fa-search"></i></button>
                                     </span>
@@ -415,476 +415,49 @@
         
             <!--Body Content-->
             <div id="page-content">
-                <!--Home slider-->
-                <div class="slideshow slideshow-wrapper pb-section">
-                    <div class="home-slideshow">
-                        <div class="slide">
-                            <div class="blur-up lazyload">
-                                <img class="blur-up lazyload" data-src="assets/images/slideshow-banners/banner.webp" src="assets/images/slideshow-banners/banner.webp" alt="Shop Our New Collection" title="Shop Our New Collection" />
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="blur-up lazyload">
-                                <img class="blur-up lazyload" data-src="assets/images/slideshow-banners/banner-slider-2.webp" src="assets/images/slideshow-banners/banner-slider-2.webp" alt="Shop Our New Collection" title="Shop Our New Collection" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Home slider-->
-                
                 <div class="container">
-                    
-                    <div class="grid-items-menu">
-                        <div class="card-items">
-                            <a href="login.html">
-                                <img src="assets/images/voucher.png" width="16">&nbsp;
-                                Vouchers
-                            </a>
+                    <div class="messages-wrap">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="message-text">Messages</h2>
+                            <a href="" class="mask-as-read">Mark all as read</a>
                         </div>
-                        <div class="card-items">
-                            <a href="register.html">
-                                <img src="assets/images/gift.png" width="15">&nbsp;
-                                Just For You
-                            </a>
-                        </div>
-                        <div class="card-items">
-                            <a href="seller-registration.html">
-                                <img src="assets/images/trending.png" width="15">&nbsp;
-                                Trending
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row mt-5">
-                        <!--Main Content-->
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 main-col shop-grid-6">
-                            <div class="section-header">
-                                <h2 class="h2">Flash Sale</h2>
-                            </div>
-                            <div class="productList">
-                                <div class="grid-products grid--view-items product-load-more">
-                                    <div class="grid-products-6">
-
-                                        <div class="item">
-                                            <!-- start product image -->
-                                            <div class="product-image">
-                                                <!-- start product image -->
-                                                <a href="product-details.html">
-                                                    <!-- image -->
-                                                    <img class="primary blur-up lazyload" data-src="assets/images/autoparts/categories-img1.jpg" src="assets/images/autoparts/categories-img1.jpg" alt="image" title="product">
-                                                    <!-- End image -->
-                                                    <!-- Hover image -->
-                                                    <img class="hover blur-up lazyload" data-src="assets/images/autoparts/categories-img1.jpg" src="assets/images/autoparts/categories-img1.jpg" alt="image" title="product">
-                                                    <!-- End hover image -->
-                                                </a>
-                                                <!-- end product image -->
-                                            </div>
-                                            <!-- end product image -->
-            
-                                            <!--start product details -->
-                                            <div class="product-details text-center">
-                                                <!-- product name -->
-                                                <div class="product-name">
-                                                    <a href="product-details.html">Auto Parts</a>
-                                                </div>
-                                                <!-- End product name -->
-                                                <!-- product price -->
-                                                <div class="product-price">
-                                                    <span class="price">&#8369;388.00</span>
-                                                </div>
-                                                <!-- End product price -->
-                                                
-                                                <div class="product-review">
-                                                    <span class="price text-muted"><strike>&#8369;788.00</strike> - 50%</span>
-                                                </div>
-                                            </div>
-                                            <!-- End product details -->
-                                        </div>
-                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 main-col mt-4">
-                            <div class="section-header">
-                                <h2 class="h2">Just For You</h2>
-                                <p>Our most popular products based on sales</p>
-                            </div>
-                            <div class="productList">
-                                <div class="grid-products product-load-more">
-                                    <div class="grid-products-6">
-
-                                        <div class="item">
-                                            <!-- start product image -->
-                                            <div class="product-image">
-                                                <!-- start product image -->
-                                                <a href="product-details.html">
-                                                    <!-- image -->
-                                                    <img class="primary blur-up lazyload" data-src="assets/images/autoparts/categories-img1.jpg" src="assets/images/autoparts/categories-img1.jpg" alt="image" title="product">
-                                                    <!-- End image -->
-                                                    <!-- Hover image -->
-                                                    <img class="hover blur-up lazyload" data-src="assets/images/autoparts/categories-img1.jpg" src="assets/images/autoparts/categories-img1.jpg" alt="image" title="product">
-                                                    <!-- End hover image -->
-                                                </a>
-                                                <!-- end product image -->
-                                            </div>
-                                            <!-- end product image -->
-            
-                                            <!--start product details -->
-                                            <div class="product-details text-center">
-                                                <!-- product name -->
-                                                <div class="product-name">
-                                                    <a href="product-details.html">Auto Parts</a>
-                                                </div>
-                                                <!-- End product name -->
-                                                <!-- product price -->
-                                                <div class="product-price">
-                                                    <span class="price">&#8369;788.00</span>
-                                                </div>
-                                                <!-- End product price -->
-                                                
-                                                <div class="product-review">
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star-o"></i>
-                                                    <i class="font-13 fa fa-star-o"></i>
-                                                </div>
-                                            </div>
-                                            <!-- End product details -->
-                                        </div>
-
-                                        <div class="item">
-                                            <!-- start product image -->
-                                            <div class="product-image">
-                                                <!-- start product image -->
-                                                <a href="#">
-                                                    <!-- image -->
-                                                    <img class="primary blur-up lazyload" data-src="assets/images/autoparts/categories-img2.jpg" src="assets/images/autoparts/categories-img2.jpg" alt="image" title="product">
-                                                    <!-- End image -->
-                                                    <!-- Hover image -->
-                                                    <img class="hover blur-up lazyload" data-src="assets/images/autoparts/categories-img2.jpg" src="assets/images/autoparts/categories-img2.jpg" alt="image" title="product">
-                                                    <!-- End hover image -->
-                                                </a>
-                                                <!-- end product image -->
-                                            </div>
-                                            <!-- end product image -->
-            
-                                            <!--start product details -->
-                                            <div class="product-details text-center">
-                                                <!-- product name -->
-                                                <div class="product-name">
-                                                    <a href="#">Auto Parts</a>
-                                                </div>
-                                                <!-- End product name -->
-                                                <!-- product price -->
-                                                <div class="product-price">
-                                                    <span class="price">&#8369;788.00</span>
-                                                </div>
-                                                <!-- End product price -->
-                                                
-                                                <div class="product-review">
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star-o"></i>
-                                                    <i class="font-13 fa fa-star-o"></i>
-                                                </div>
-                                            </div>
-                                            <!-- End product details -->
-                                        </div>
-
-                                        <div class="item">
-                                            <!-- start product image -->
-                                            <div class="product-image">
-                                                <!-- start product image -->
-                                                <a href="#">
-                                                    <!-- image -->
-                                                    <img class="primary blur-up lazyload" data-src="assets/images/autoparts/categories-img3.jpg" src="assets/images/autoparts/categories-img3.jpg" alt="image" title="product">
-                                                    <!-- End image -->
-                                                    <!-- Hover image -->
-                                                    <img class="hover blur-up lazyload" data-src="assets/images/autoparts/categories-img3.jpg" src="assets/images/autoparts/categories-img3.jpg" alt="image" title="product">
-                                                    <!-- End hover image -->
-                                                </a>
-                                                <!-- end product image -->
-                                            </div>
-                                            <!-- end product image -->
-            
-                                            <!--start product details -->
-                                            <div class="product-details text-center">
-                                                <!-- product name -->
-                                                <div class="product-name">
-                                                    <a href="#">Auto Parts</a>
-                                                </div>
-                                                <!-- End product name -->
-                                                <!-- product price -->
-                                                <div class="product-price">
-                                                    <span class="price">&#8369;788.00</span>
-                                                </div>
-                                                <!-- End product price -->
-                                                
-                                                <div class="product-review">
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star-o"></i>
-                                                    <i class="font-13 fa fa-star-o"></i>
-                                                </div>
-                                            </div>
-                                            <!-- End product details -->
-                                        </div>
-
-                                        <div class="item">
-                                            <!-- start product image -->
-                                            <div class="product-image">
-                                                <!-- start product image -->
-                                                <a href="#">
-                                                    <!-- image -->
-                                                    <img class="primary blur-up lazyload" data-src="assets/images/autoparts/categories-img4.jpg" src="assets/images/autoparts/categories-img4.jpg" alt="image" title="product">
-                                                    <!-- End image -->
-                                                    <!-- Hover image -->
-                                                    <img class="hover blur-up lazyload" data-src="assets/images/autoparts/categories-img4.jpg" src="assets/images/autoparts/categories-img4.jpg" alt="image" title="product">
-                                                    <!-- End hover image -->
-                                                </a>
-                                                <!-- end product image -->
-                                            </div>
-                                            <!-- end product image -->
-            
-                                            <!--start product details -->
-                                            <div class="product-details text-center">
-                                                <!-- product name -->
-                                                <div class="product-name">
-                                                    <a href="#">Auto Parts</a>
-                                                </div>
-                                                <!-- End product name -->
-                                                <!-- product price -->
-                                                <div class="product-price">
-                                                    <span class="price">&#8369;788.00</span>
-                                                </div>
-                                                <!-- End product price -->
-                                                
-                                                <div class="product-review">
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star-o"></i>
-                                                    <i class="font-13 fa fa-star-o"></i>
-                                                </div>
-                                            </div>
-                                            <!-- End product details -->
-                                        </div>
-
-                                        <div class="item">
-                                            <!-- start product image -->
-                                            <div class="product-image">
-                                                <!-- start product image -->
-                                                <a href="#">
-                                                    <!-- image -->
-                                                    <img class="primary blur-up lazyload" data-src="assets/images/autoparts/categories-img5.jpg" src="assets/images/autoparts/categories-img5.jpg" alt="image" title="product">
-                                                    <!-- End image -->
-                                                    <!-- Hover image -->
-                                                    <img class="hover blur-up lazyload" data-src="assets/images/autoparts/categories-img5.jpg" src="assets/images/autoparts/categories-img5.jpg" alt="image" title="product">
-                                                    <!-- End hover image -->
-                                                </a>
-                                                <!-- end product image -->
-                                            </div>
-                                            <!-- end product image -->
-            
-                                            <!--start product details -->
-                                            <div class="product-details text-center">
-                                                <!-- product name -->
-                                                <div class="product-name">
-                                                    <a href="#">Auto Parts</a>
-                                                </div>
-                                                <!-- End product name -->
-                                                <!-- product price -->
-                                                <div class="product-price">
-                                                    <span class="price">&#8369;788.00</span>
-                                                </div>
-                                                <!-- End product price -->
-                                                
-                                                <div class="product-review">
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star-o"></i>
-                                                    <i class="font-13 fa fa-star-o"></i>
-                                                </div>
-                                            </div>
-                                            <!-- End product details -->
-                                        </div>
-
-                                        <div class="item">
-                                            <!-- start product image -->
-                                            <div class="product-image">
-                                                <!-- start product image -->
-                                                <a href="#">
-                                                    <!-- image -->
-                                                    <img class="primary blur-up lazyload" data-src="assets/images/autoparts/categories-img6.jpg" src="assets/images/autoparts/categories-img6.jpg" alt="image" title="product">
-                                                    <!-- End image -->
-                                                    <!-- Hover image -->
-                                                    <img class="hover blur-up lazyload" data-src="assets/images/autoparts/categories-img6.jpg" src="assets/images/autoparts/categories-img6.jpg" alt="image" title="product">
-                                                    <!-- End hover image -->
-                                                </a>
-                                                <!-- end product image -->
-                                            </div>
-                                            <!-- end product image -->
-            
-                                            <!--start product details -->
-                                            <div class="product-details text-center">
-                                                <!-- product name -->
-                                                <div class="product-name">
-                                                    <a href="#">Auto Parts</a>
-                                                </div>
-                                                <!-- End product name -->
-                                                <!-- product price -->
-                                                <div class="product-price">
-                                                    <span class="price">&#8369;788.00</span>
-                                                </div>
-                                                <!-- End product price -->
-                                                
-                                                <div class="product-review">
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star"></i>
-                                                    <i class="font-13 fa fa-star-o"></i>
-                                                    <i class="font-13 fa fa-star-o"></i>
-                                                </div>
-                                            </div>
-                                            <!-- End product details -->
-                                        </div>
-
+                        <ul>
+                            <li class="contact">
+                                <div class="wrap">
+                                    <img src="assets/images/default.jpg" alt="" />
+                                    <div class="meta">
+                                        <p class="name">Harvey Specter</p>
+                                        <p class="date-time">July 03, 2020 . 11:55am</p>
+                                        <p class="preview text-truncate">Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.</p>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- <div class="infinitpaginOuter">
-                                <div class="infinitpagin">  
-                                    <a href="javascript:void(0)" class="btn loadMore">Load More</a>
+                            </li>
+                            <li class="contact">
+                                <div class="wrap">
+                                    <img src="assets/images/default.jpg" alt="" />
+                                    <div class="meta">
+                                        <p class="name">Harvey Specter</p>
+                                        <p class="date-time">July 03, 2020 . 11:55am</p>
+                                        <p class="preview text-truncate">Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.</p>
+                                    </div>
                                 </div>
-                            </div> -->
-                        </div>
-                        <!--End Main Content-->
+                            </li>
+                            <li class="contact">
+                                <div class="wrap">
+                                    <img src="assets/images/default.jpg" alt="" />
+                                    <div class="meta">
+                                        <p class="name">Harvey Specter</p>
+                                        <p class="date-time">July 03, 2020 . 11:55am</p>
+                                        <p class="preview text-truncate">Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>                        
                     </div>
-                </div>
-                
+                </div>   
             </div>
             <!--End Body Content-->
 
-            <!-- Chat Drawer -->
-            <div class="t_chat-container-wrap d-m-none">
-                <div class="t_chat popup-ani">
-                    <header>
-                        <h3>Trietrade</h3>
-                    </header>
-
-                    <!-- Show this message if the user is not login -->
-                    <div class="container mt-3">
-                        <img src="assets/images/faq.png" alt="" width="200">
-                        <p style="font-size: 16px; font-weight: 500; font-family: Monserrat, sans-serif; line-height: 23px;">Please login or create <br> your account.</p>
-                        <div class="mt-5">
-                            <button type="button" class="btn btn-full-w">Login</button>
-                            <button type="button" class="btn btn--ghost btn-full-w mt-2">Create an Account</button>
-                        </div>
-                    </div>
-
-                    <!-- Show this chat message frame if the user is login -->
-                    <!-- <div id="frame">
-                        <div id="sidepanel">
-                            <div id="profile">
-                                <div class="wrap">
-                                    <img id="profile-img" src="assets/images/default.jpg" class="online" alt="" />
-                                    <p>Juan Dela Cruz</p>
-                                </div>
-                            </div>
-                            <h4>Messages</h4>
-                            <div id="contacts">
-                                <ul>
-                                    <li class="contact">
-                                        <div class="wrap">
-                                            <img src="assets/images/default.jpg" alt="" />
-                                            <div class="meta">
-                                                <p class="name">Harvey Specter</p>
-                                                <p class="preview">Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="contact">
-                                        <div class="wrap">
-                                            <img src="assets/images/default.jpg" alt="" />
-                                            <div class="meta">
-                                                <p class="name">Harvey Specter</p>
-                                                <p class="preview">Wrong. You take the gun, or you pull out a bigger one.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="contact">
-                                        <div class="wrap">
-                                            <img src="assets/images/default.jpg" alt="" />
-                                            <div class="meta">
-                                                <p class="name">Harvey Specter</p>
-                                                <p class="preview">Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="contact-profile">
-                                <img src="assets/images/default.jpg" alt="" />
-                                <p>Trietrade Seller</p>
-                                <div class="social-media">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                     <i class="fa fa-instagram" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                            <div class="messages">
-                                <ul>
-                                    <li class="sent">
-                                        <img src="assets/images/default.jpg" alt="" />
-                                        <p>How the hell am I supposed to get a jury to believe you when I am not even sure that I do?!</p>
-                                    </li>
-                                    <li class="replies">
-                                        <img src="assets/images/default.jpg" alt="" />
-                                        <p>When you're backed against the wall, break the god damn thing down.</p>
-                                    </li>
-                                    <li class="sent">
-                                        <img src="assets/images/default.jpg" alt="" />
-                                        <p>How the hell am I supposed to get a jury to believe you when I am not even sure that I do?!</p>
-                                    </li>
-                                    <li class="replies">
-                                        <img src="assets/images/default.jpg" alt="" />
-                                        <p>When you're backed against the wall, break the god damn thing down.</p>
-                                    </li>
-                                    <li class="sent">
-                                        <img src="assets/images/default.jpg" alt="" />
-                                        <p>How the hell am I supposed to get a jury to believe you when I am not even sure that I do?!</p>
-                                    </li>
-                                    <li class="replies">
-                                        <img src="assets/images/default.jpg" alt="" />
-                                        <p>Ok.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="message-input">
-                                <div class="wrap">
-                                    <input type="text" placeholder="Write your message..." />
-                                    <button class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-                <div class="t_chat-fab">
-                    <div class="wrap">
-                        <div class="img-fab img"></div>
-                    </div>
-                </div>
-            </div>
-
-        
             <!--Footer-->
             <footer id="footer" class="footer-2">
                 <div class="site-footer">
@@ -937,39 +510,10 @@
                         <div class="footer-bottom">
                             <div class="row">
                                 <!--Footer Copyright-->
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 order-1 order-md-0 order-lg-0 order-sm-1 copyright">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 order-1 order-md-0 order-lg-0 order-sm-1 copyright">
                                     Copyright &copy; 2020. All Rights Reserved. Trietrade
                                 </div>
                                 <!--End Footer Copyright-->
-                                <!--Footer Payment Icon-->
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 order-0 order-md-1 order-lg-1 order-sm-0 text-right text-md-center">
-                                    <ul class="list--inline site-footer__social-icons social-icons">
-                                        <li>
-                                            <a class="social-icons__link" href="#" target="_blank" title="Trietrade on Facebook">
-                                                <i class="icon icon-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="social-icons__link" href="#" target="_blank" title="Trietrade on Twitter">
-                                                <i class="icon icon-twitter"></i> 
-                                                <span class="icon__fallback-text">Twitter</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="social-icons__link" href="#" target="_blank" title="Trietrade on Pinterest">
-                                                <i class="icon icon-pinterest"></i> 
-                                                <span class="icon__fallback-text">Pinterest</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="social-icons__link" href="#" target="_blank" title="Trietrade on Instagram">
-                                                <i class="icon icon-instagram"></i> 
-                                                <span class="icon__fallback-text">Instagram</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--End Footer Payment Icon-->
                             </div>
                         </div>
                     </div>

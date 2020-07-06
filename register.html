@@ -246,58 +246,77 @@
                 <!--End Page Title-->
                 
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 main-col offset-md-3">
-                            <div class="mb-4">
-                            <form method="post" action="#" id="CustomerLoginForm" accept-charset="UTF-8" class="contact-form">	
-                                <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                        <div class="form-group">
-                                            <label for="FirstName">Full Name</label>
-                                            <input type="text" name="customer[first_name]" placeholder="Enter your full name" id="FirstName" autofocus="">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-12 col-md-10 col-lg-10">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <form method="post" action="#" accept-charset="UTF-8">	
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="FirstName">Full Name</label>
+                                                            <input type="text" name="customer[first_name]" placeholder="Enter your full name" id="FirstName" autofocus="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="CustomerEmail">Email</label>
+                                                            <input type="email" name="customer[email]" placeholder="Enter email address" id="CustomerEmail" class="" autocorrect="off" autocapitalize="off" autofocus="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <div class="form-group">
+                                                            <label for="CustomerPassword">Password</label>
+                                                            <input type="password" value="" name="customer[password]" placeholder="Enter your password" id="CustomerPassword" class="">                        	
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <div class="form-group">
+                                                            <label for="CustomerPassword">Confirm Password</label>
+                                                            <input type="password" value="" name="customer[password]" placeholder="Confirm your password" id="CustomerPassword" class="">                        	
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <div class="form-group">
+                                                            <label for="CustomerPassword">By clicking "SIGN UP" I agree to Trietrade's Terms of Use and Privacy Policy</label>                        	
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <input type="submit" class="btn mb-3" value="Create">
+                										<p>
+                											<span>Already have an account?</span>
+                											<a href="login.html" class="btn btn--link">Login Account</a>
+                										</p>
+                                                    </div>
+                								</div>
+                                            </form>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                        <div class="form-group">
-                                            <label for="CustomerEmail">Email</label>
-                                            <input type="email" name="customer[email]" placeholder="Enter a valid email address" id="CustomerEmail" class="" autocorrect="off" autocapitalize="off" autofocus="">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="form-group">
-                                            <label for="CustomerPassword">Password</label>
-                                            <input type="password" value="" name="customer[password]" placeholder="Enter your password" id="CustomerPassword" class="">                        	
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="form-group">
-                                            <label for="CustomerPassword">Confirm Password</label>
-                                            <input type="password" value="" name="customer[password]" placeholder="Confirm your password" id="CustomerPassword" class="">                        	
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="form-group">
-                                            <label for="CustomerPassword">By clicking "SIGN UP" I agree to Trietrade's Terms of Use and Privacy Policy</label>                        	
+                                        <div class="col-lg-6">
+                                            <p class="mb-4">
+                                                Or, signup with
+                                            </p>
+                                            <!-- Button Instagram -->
+                                            <div class="btn__container">
+                                                <a href="#" class="btn-ins">
+                                                    <i class="fa fa-instagram"></i>
+                                                    <span>instagram</span>
+                                                </a>
+                                                <a href="#" class="btn-f">
+                                                    <i class="fa fa-facebook"></i>
+                                                    <span>facebook</span>
+                                                </a>
+                                                <a href="#" class="btn-g">
+                                                    <i class="fa fa-google"></i>
+                                                    <span>google</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="text-center col-12 col-sm-12 col-md-12 col-lg-12">
-                                        <input type="submit" class="btn mb-3" value="Create">
-										<p class="mb-4">
-											<span>Already have an account?</span> &nbsp; | &nbsp;
-											<a href="login.html" id="customer_register_link">Login Account</a>
-										</p>
-                                    </div>
-                                    <div class="text-center col-12 col-sm-12 col-md-12 col-lg-12">
-										<p class="mb-4">
-											Or, signup with
-                                        </p>
-                                        <button type="button" class="btn"><i class="ti-facebook"></i>&nbsp; Facebook</button>
-                                        <button type="button" class="btn" style="background: #f25a62;"><i class="ti-google"></i>&nbsp; Google</button>
-									</div>
-								</div>
-                            </form>
                             </div>
                         </div>
                     </div>

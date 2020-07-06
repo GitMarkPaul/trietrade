@@ -1,0 +1,188 @@
+// Trietrade Order Track
+
+figure {
+  display: flex;
+}
+figure img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 15%;
+  border: 1.5px solid #f05a00;
+  margin-right: 1.5rem;
+  padding:1rem;
+  margin-top: 58px;
+}
+figure figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+figure figcaption h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+figure figcaption h6 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+figure figcaption h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.order-track {
+  margin-top: 2rem;
+  border-top: 1px dashed #2c3e50;
+  padding-top: 2.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.order-track-step {
+  display: flex;
+  height: 4rem;
+}
+.order-track-step:last-child {
+  overflow: hidden;
+  height: 4rem;
+}
+.order-track-step:last-child .order-track-status span:last-of-type {
+  display: none;
+}
+.order-track-status {
+  margin-right: 1.5rem;
+  position: relative;
+}
+.order-track-status-dot {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #f05a00;
+}
+
+.order-track-status-dot-inactive {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #aaa;
+}
+
+.order-track-status-line {
+  display: block;
+  margin: 0 auto;
+  width: 2px;
+  height: 4rem;
+  background: #f05a00;
+}
+
+.order-track-status-line-inactive {
+  display: block;
+  margin: 0 auto;
+  width: 2px;
+  height: 4rem;
+  background: #aaa;
+}
+
+.order-track-text-stat {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: #1a2158;
+}
+.order-track-text-sub {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.order-track {
+  transition: all .3s height 0.3s;
+  transform-origin: top center;
+}
+
+// /*Order Traker Timeline*/
+
+.hh-grayBox {
+  background-color: #F8F8F8;
+  margin-bottom: 20px;
+  padding: 25px;
+}
+.pt45{padding-top:45px;}
+.order-tracking{
+  text-align: center;
+  width: 33.33%;
+  position: relative;
+  display: block;
+}
+.order-tracking .is-complete{
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: 0px solid #AFAFAF;
+  background-color: #aaa;
+  margin: 0 auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+  z-index: 2;
+}
+.order-tracking .is-complete:after {
+  display: block;
+  position: absolute;
+  content: '';
+  height: 14px;
+  width: 7px;
+  top: -2px;
+  bottom: 0;
+  left: 5px;
+  margin: auto 0;
+  border: 0px solid #AFAFAF;
+  border-width: 0px 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+.order-tracking.completed .is-complete{
+  border-color: #1d7ae2;
+  border-width: 0px;
+  background-color: #1d7ae2;
+}
+.order-tracking.completed .is-complete:after {
+  border-color: #fff;
+  border-width: 0px 3px 3px 0;
+  width: 7px;
+  left: 11px;
+  opacity: 1;
+}
+.order-tracking p {
+  color: #A4A4A4;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+.order-tracking p {font-size: 14px;}
+.order-tracking span{font-size: 12px;}
+.order-tracking.completed p{color: #1a2158;}
+.order-tracking::before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: calc(100% - 40px);
+  background-color: #aaa;
+  top: 13px;
+  position: absolute;
+  left: calc(-50% + 20px);
+  z-index: 0;
+}
+.order-tracking:first-child:before{display: none;}
+.order-tracking.completed:before{background-color: #1d7ae2;}
+
+
+.badge {
+    font-weight: 400;
+    border-radius: 12px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

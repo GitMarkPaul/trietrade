@@ -1,0 +1,24 @@
+// Trietrade Image Banner
+
+.section.imgBanners { padding-top:8px; padding-bottom:20px; }
+.imgBnrOuter .inner img { display:block; width:100%; }
+.imgBnrOuter .inner * { -ms-transition:all 0.4s ease-in-out; -webkit-transition:all 0.4s ease-in-out; transition:all 0.4s ease-in-out; }
+.imgBnrOuter .inner a, .imgBnrOuter .inner a:hover { opacity:1; }
+.imgBnrOuter .inner .ttl { line-height:25px; color:#1a2158; font-size:17px; display:inline-block; padding:10px 20px; max-width:80%; position:absolute; background-color:rgba(255,255,255,0.8); }
+.imgBnrOuter .inner:hover .ttl { background-color:#fff; }
+.imgBnrOuter .inner .ttl h3 { font-family:Poppins,Helvetica,Tahoma,Arial,sans-serif; font-weight:700; font-size:21px; }
+.imgBnrOuter .inner .ttl h5 { font-family:Poppins,Helvetica,Tahoma,Arial,sans-serif; font-weight:700; font-size:16px; }
+.imgBnrOuter .inner.center .ttl { left:50%; top:50%; -ms-transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%); }
+.imgBnrOuter .inner.btmright .ttl { right:20px; bottom:20px; text-align:right; }
+.imgBnrOuter .inner.topleft .ttl { left:20px; top:20px; text-align:left; }
+.imgBnrOuter .inner.topright .ttl { right:20px; top:20px; text-align:right; }
+.imgBnrOuter .inner { position:relative; overflow:hidden; }
+.imgBnrOuter .inner:hover img { -ms-transform:scale(1.1); -webkit-transform:scale(1.1); transform:scale(1.1); }
+.imgBnrOuter .inner.btmleft .ttl { left:20px; bottom:20px; text-align:left; }
+.imgBnrOuter .img-bnr { text-align:center; padding:10px; }
+ 
+.custom-content-style1 .mb-4 { margin-bottom:30px !important; }
+.custom-content-style1 .h3 { font-size:16px; line-height:normal; line-height:24px; text-transform:uppercase; }
+
+.blur-up.lazyloaded { -webkit-filter:blur(0); filter:blur(0); }
+.blur-up { -webkit-filter:blur(5px); filter:blur(5px); transition:filter 400ms, -webkit-filter 400ms; -webkit-transition:filter 400ms, -webkit-filter 400ms; }

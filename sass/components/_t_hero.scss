@@ -1,0 +1,19 @@
+// Trietrade Hero Banners
+
+.hero { position:relative; height:475px; display:table; width:100%; background-size:cover; background-repeat:no-repeat; background-position:50% 50%; background-attachment:scroll; }
+.hero__inner { position:relative; display:table-cell; vertical-align:middle; padding:35px 0; color:#1a2158; z-index:2; text-align:center; }
+.hero[data-stellar-background-ratio] { background-attachment:fixed; }
+.hero .text-small .mega-title { font-size:25px; font-family:Poppins,Helvetica,Tahoma,Arial,sans-serif; font-weight:700; }
+.hero .text-small .mega-subtitle { font-size:16px; margin-bottom:25px; }
+@media only screen and (min-width:990px) {
+.hero__inner .wrap-text { max-width:500px; }
+}
+.hero--large { height:650px; }
+.hero .text-large .mega-title { font-size:45px; }
+.hero__inner .center { text-align:center; margin:0 auto; }
+.hero .text-large .mega-subtitle { font-size:20px; }
+.hero .mega-subtitle { margin-bottom:25px; }
+.hero .font-bold .mega-title { font-weight:700; }
+.hero__inner .right { float:right; text-align:center; }
+.hero .text-medium .mega-title { font-size:35px; }
+.hero .text-medium .mega-subtitle { font-size:18px; }

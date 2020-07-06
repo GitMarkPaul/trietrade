@@ -80,7 +80,7 @@
             </div>
             <!--End Top Header-->
 
-                        <div class="header-wrap animated d-flex border-bottom mobile-header-wrap">
+            <div class="header-wrap animated d-flex border-bottom mobile-header-wrap">
                 <div class="container-fluid">        
                     <div class="row align-items-center">
                         <!--Desktop Logo-->
@@ -246,57 +246,76 @@
 				<!--End Page Title-->
         
 				<div class="container">
-					<div class="row">
-						<div class="col-12 col-sm-12 col-md-6 col-lg-6 main-col offset-md-3">
-							<div class="mb-4">
-							<form method="post" action="#" id="CustomerLoginForm" accept-charset="UTF-8" class="contact-form">	
-								<div class="row">
-									<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-										<div class="form-group">
-											<label for="CustomerEmail">Email</label>
-											<input type="email" name="customer[email]" placeholder="Enter valid email address" id="CustomerEmail" class="" autocorrect="off" autocapitalize="off" autofocus="">
-										</div>
-									</div>
-									<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-										<label for="CustomerPassword">Password</label>
-                                        <div class="input-group mb-4">
-                                            <input type="password" class="form-control" id="password" placeholder="Type Your Password">
-                                            <div class="input-group-prepend">
-                                                <div class="input-group-text"><i class="fa fa-eye-slash" id="eye"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
+					<div class="row justify-content-center">
+						<div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                            <div class="card">
+                                <div class="card-body">
+            						<div class="row">
+                                        <div class="col-lg-6">
+                							<form method="post" action="#" id="CustomerLoginForm" accept-charset="UTF-8" class="contact-form">	
+                								<div class="row">
+                									<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                										<div class="form-group">
+                											<label for="CustomerEmail">Email</label>
+                											<input type="email" name="customer[email]" placeholder="Enter valid email address" id="CustomerEmail" class="form-control" autocorrect="off" autocapitalize="off" autofocus="">
+                										</div>
+                									</div>
+                									<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                										<label for="CustomerPassword">Password</label>
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control" id="password" placeholder="Type Your Password">
+                                                        </div>
+                                                    </div>
 
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-										<div class="form-group">
-                                            <div class="control-group">
-                                                <label class="control control-checkbox">
-                                                    Remember me!
-                                                    <input type="checkbox" class="selectall">
-                                                    <div class="control_indicator"></div>
-                                                </label>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-between">
+                										<div class="form-group">
+                                                            <div class="control-group">
+                                                                <label class="control control-checkbox">
+                                                                    Remember me!
+                                                                    <input type="checkbox" class="selectall">
+                                                                    <div class="control_indicator"></div>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <a href="forgot-password.html" id="RecoverPassword">Forgot your password?</a>
+                                                        </div>
+                                                    </div>
+                								</div>
+                								<div class="row">
+                									<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                										<input type="submit" class="btn mb-3" value="Sign In">
+                										<p>
+                											 Don't have an account yet?
+                											<a href="register.html" class="btn btn--link">Create account</a>
+                										</p>
+                                                    </div>
+                								</div>
+                							</form>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p class="mb-4">
+                                                Or, login with
+                                            </p>
+                                            <!-- Button Instagram -->
+                                            <div class="btn__container">
+                                                <a href="#" class="btn-ins">
+                                                    <i class="fa fa-instagram"></i>
+                                                    <span>instagram</span>
+                                                </a>
+                                                <a href="#" class="btn-f">
+                                                    <i class="fa fa-facebook"></i>
+                                                    <span>facebook</span>
+                                                </a>
+                                                <a href="#" class="btn-g">
+                                                    <i class="fa fa-google"></i>
+                                                    <span>google</span>
+                                                </a>
                                             </div>
                                         </div>
-                                    </div>
-								</div>
-								<div class="row">
-									<div class="text-center col-12 col-sm-12 col-md-12 col-lg-12">
-										<input type="submit" class="btn mb-3" value="Sign In">
-										<p class="mb-4">
-											<a href="forgot-password.html" id="RecoverPassword">Forgot your password?</a> &nbsp; | &nbsp;
-											<a href="register.html" id="customer_register_link">Create account</a>
-										</p>
-                                    </div>
-                                    <div class="text-center col-12 col-sm-12 col-md-12 col-lg-12">
-										<p class="mb-4">
-											Or, login with
-                                        </p>
-                                        <button type="button" class="btn"><i class="ti-facebook"></i>&nbsp; Facebook</button>
-                                        <button type="button" class="btn" style="background: #f25a62;"><i class="ti-google"></i>&nbsp; Google</button>
-									</div>
-								</div>
-							</form>
-							</div>
+            						</div>
+                                </div>
+                            </div>
 						</div>
 					</div>
 				</div>

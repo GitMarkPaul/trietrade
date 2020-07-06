@@ -1,0 +1,20 @@
+// Trietrade Checkout
+
+.customer-box h3 { color:#fff; font-size:17px;  font-weight:400; line-height:normal; margin:0; padding:15px; text-transform:uppercase; background-color:#1a2158; }
+.customer-box h3 i { margin-right:5px; }
+.customer-box h3 a { font-weight:700; text-decoration:none; }
+.billing-fields { margin-bottom:30px; }
+.order-table .table thead th { background-color:#fff; font-size:13px; padding:8px 5px 5px; border-bottom:1px solid #ddd; }
+.order-table .table td { font-size:13px; padding:8px 5px 5px; }
+.card { border-radius:0; margin-bottom:10px; }
+.card-header { position:relative; padding:15px; }
+.card-header:before{ content:"\f078"; font-family:'FontAwesome'; font-size:13px; position:absolute; right:20px; top:18px; color:#555; }
+.payment-accordion .card .card-header { background-color:#fff; }
+.payment-accordion .card .card-header a { display:block; font-size:16px; font-weight:500; color: #1a2158; }
+.order-button-payment .btn { width: 100%; }
+.customer-box .discount-coupon, .customer-box .customer-info { background-color:#f7f7f7; padding:20px; }
+.customer-box .discount-coupon, .coupon-btn { width: 100%; }
+.create-ac-content, .your-order-payment { border:1px solid #ddd; padding:20px; background-color: #fff;}
+.create-ac-content .form-check { margin-left:15px; }
+.customer-box input[type="email"], .customer-box input[type="text"], .customer-box input[type="password"] { background-color:#fff; }
+.order-button-payment { margin-top:30px; }
